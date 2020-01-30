@@ -13,9 +13,9 @@ npm start
 ```
 
 
-Especificaciones
-```
+### Especificaciones
+
 Debe de crear cuentas en las APIS:
 openwethermap
 
-```
+En la carpeta public vamos a encontrar todo lo que deseamos ver en nuestra aplicacion

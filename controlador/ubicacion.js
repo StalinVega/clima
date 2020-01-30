@@ -9,7 +9,7 @@ const getCiudadLatLon = async(nombre) => {
         baseURL: `https://devru-latitude-longitude-find-v1.p.rapidapi.com/latlon.php?location=${ciudad}`,
         headers: { 'X-RapidAPI-Key': '8ac05538ebmsh1d8d2bb9ae49d50p1737a9jsn3064fa337c89' }
     });
-
+//El operador await es usado para esperar a una Promise. Sólo puede ser usado dentro de una función async function
     const resp = await instance.get();
 
     if (resp.data.Results.length === 0) {
@@ -29,6 +29,7 @@ const getCiudadLatLon = async(nombre) => {
 
 }
 
+//exportamos para poder utilizar en otra clase JS
 module.exports = {
     getCiudadLatLon
 }
